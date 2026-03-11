@@ -69,7 +69,7 @@ const ProductsPage = () => {
               </h2>
 
               <p className="text-gray-500 text-sm mb-2">
-                {product.description?.slice(0, 60)}...
+                
               </p>
 
               <p className="text-blue-600 font-bold text-xl mb-4">
@@ -80,6 +80,7 @@ const ProductsPage = () => {
 
                 <button
                   onClick={() => navigate(`/edit-product/${product._id}`)}
+                  
                   className="flex items-center gap-2 bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500 transition"
                 >
                   <FaEdit />

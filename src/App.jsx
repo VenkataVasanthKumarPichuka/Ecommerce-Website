@@ -5,9 +5,13 @@ import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Categories from "./Pages/Categories";
 import AddProduct from "./Pages/AddProduct";
-import ProductsPage from "./Pages/ProductsPage";
+
 import Subcategories from "./Pages/Subcategories";
-import EditProduct from "./Pages/EditProduct";
+import ProductsPage from "./Pages/ProductsPage";
+import EditProductPage from "./Pages/EditProductPage";
+
+
+
 
 function App() {
   return (
@@ -22,9 +26,13 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/products" element={<ProductsPage />} />
+       
         <Route path="/subcategories" element={<Subcategories />} />
-        <Route path="/edit-product/:id" element={<EditProduct />} />
+        <Route path="/products" element={<ProductsPage />} />
+
+        <Route path="/edit-product/:id" element={<EditProductPage />} />
+
+       
 
 
       </Route>
